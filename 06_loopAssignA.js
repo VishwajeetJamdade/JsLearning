@@ -31,9 +31,11 @@ function vovels(string) {
 vovels("I am very good IT Developer");
 console.error(`--------------------------------------------------------------------------------------------------------------------------------------------++`);
 function sumOfCube() {
+    let cubeSum=0;
     for (let index = 1; index <= 5; index++) {
         let totalofCube=index*index*index;
-       console.log(`The Cube of ${index} is :${totalofCube}`);
+        cubeSum=cubeSum+totalofCube;
+       console.log(`The Cube of ${index} is :${totalofCube} and sun of cube is ${cubeSum}`);
         
     }
 }
@@ -43,7 +45,7 @@ function oddPositionedChars(str) {
     result="";
     for (let index = 0; index < str.length; index++) {
         let char=str.charAt(index);
-        if (index%2==0 && char!=" ") {
+        if (index%2!=0 && char!=" ") {
            result=result.concat(char).concat(" ");
            
         }
