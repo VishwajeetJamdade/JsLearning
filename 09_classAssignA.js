@@ -48,15 +48,17 @@ for (const iterator of allCollege) {
 }
 console.log(`===========================Task-3================================================================================================================================================`);
 function traverseObject(obj1) {
-    let newline="";
+    // let newline="";
     for (const key in obj1) {
         if (obj1.hasOwnProperty.call(obj1, key)) {
             const element = obj1[key];
-            newline=newline+element
-           
+            // newline=newline+element
+            console.log(`${key} : ${element}`);
+            console.log(`----------------------`);
         }
     }
-    console.log(newline);
+    // console.log(newline);
+    
 }
 traverseObject(YCSRD);
 traverseObject(PDVP);
